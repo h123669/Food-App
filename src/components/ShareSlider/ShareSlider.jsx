@@ -64,7 +64,7 @@ export default function ShareSlider() {
                     <span className='flex justify-center'>
                       <MdAccountBalance size={80} color='brown' />
                     </span>
-                    <h3 className='text-center text-xl '>{ele.strArea}</h3>
+                    <h3 className='text-center text-xl px-5'>{ele.strArea}</h3>
                   </Link>
                 </div>
               );
