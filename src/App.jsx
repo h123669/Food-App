@@ -14,7 +14,6 @@ import CategoryDetails from './components/CategoryDetails/CategoryDetails'
 import AreaDetails from './components/AreaDetails/AreaDetails'
 import IngredientsDetails from './components/IngredientsDetails/IngredientsDetails';
 import { RecoilRoot } from 'recoil'
-import Search from './components/Search/Search';
 import SearchMeal from './components/SearchMeal/SearchMeal'
 
 function App() {

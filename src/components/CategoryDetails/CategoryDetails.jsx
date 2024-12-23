@@ -29,7 +29,7 @@ console.log(error);
     <span className="loader"></span> 
   </div>
     :Category?.map((ele)=>{ return(
-      <div key={ele.idMeal} className='flex flex-col items-center w-1/5'>
+      <div key={ele.idMeal} className='flex flex-col items-center w-1/3 lg:w-1/5 '>
         <Link to={`../RecipesDetails/${ele.idMeal}`}>
       <img src={ele.strMealThumb} className='object-cover rounded-md' alt={ele.strMeal} />
       <h3 className='text-center text-xl'>{ele.strMeal}</h3>

@@ -29,33 +29,42 @@ export default function ShareSlider() {
         {
           breakpoint: 768, 
           settings: {
-            slidesToShow:4,
+            slidesToShow:3,
           }
         },
         {
           breakpoint: 480, 
           settings: {
-            slidesToShow:4,
+            slidesToShow:3,
           }
         }
-      ]
+      ],prevArrow: (
+        <button style={{ backgroundColor: 'transparent', border: 'none', position: 'absolute', top: '50%', left: '10px', zIndex: '10' }}>
+          <span style={{ fontSize: '30px', color: 'brown' }}>&#10094;</span> 
+        </button>
+      ),
+      nextArrow: (
+        <button style={{ backgroundColor: 'transparent', border: 'none', position: 'absolute', top: '50%', right: '10px', zIndex: '10' }}>
+          <span style={{ fontSize: '30px', color: 'brown' }}>&#10095;</span> 
+        </button>
+      )
     };
 
     
     
     
   
-  return <><div className='py-5'>
+  return <><div className='p-5'>
 
       <Slider {...settings}>
             {AreaState?.map((ele) => {
               return (
-                <div key={ele.idCategory} className='flex flex-col'>
+                <div key={ele.idCategory} className='flex flex-col '>
                   <Link to={`../AreaDetails/${ele.strArea}`}>
                     <span className='flex justify-center'>
                       <MdAccountBalance size={80} color='brown' />
                     </span>
-                    <h3 className='text-center text-xl'>{ele.strArea}</h3>
+                    <h3 className='text-center text-xl '>{ele.strArea}</h3>
                   </Link>
                 </div>
               );
